@@ -14,10 +14,16 @@ public class MuricaStoryControl : MonoBehaviour {
 	[SerializeField]
 	private Text storyMesh;
 
+	[SerializeField]
+	private Text instructionMesh;
+
 	private int turkeyDrops = 0;
 
 	// Use this for initialization
 	IEnumerator Start () {
+
+		instructionMesh.text = "Drag boxes of turkey and drop them into the water.";
+
 		foreach (string storyItem in turkeyPartyStory) {
 			storyMesh.text = storyItem;
 
