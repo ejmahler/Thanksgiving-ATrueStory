@@ -1,6 +1,6 @@
 fileFormatVersion: 2
 guid: 9b2e4bde4e4ae4feba5a2e251deb76d4
-timeCreated: 1454205324
+timeCreated: 1454206257
 licenseType: Free
 TextureImporter:
   fileIDToRecycleName:
@@ -12,10 +12,11 @@ TextureImporter:
     21300010: witchassetsheet_5
     21300012: witchassetsheet_6
     21300014: witchassetsheet_7
+    21300016: witchassetsheet_8
   serializedVersion: 2
   mipmaps:
     mipMapMode: 0
-    enableMipMap: 1
+    enableMipMap: 0
     linearTexture: 0
     correctGamma: 0
     fadeOut: 0
@@ -66,7 +67,7 @@ TextureImporter:
         width: 202
         height: 138
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline:
       - - {x: 39.135452, y: 57.912964}
@@ -86,7 +87,7 @@ TextureImporter:
         width: 182
         height: 412
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline:
       - - {x: 76.9577, y: 84.367065}
@@ -111,9 +112,63 @@ TextureImporter:
         width: 35
         height: 57
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
+      outline:
+      - - {x: 39.135452, y: 57.912964}
+        - {x: 36.135452, y: 56.912964}
+        - {x: -83.86455, y: 22.912964}
+        - {x: -83.86455, y: -57.087036}
+        - {x: -37.864548, y: -57.087036}
+        - {x: 26.135452, y: -43.087036}
+        - {x: 85.13545, y: -4.087036}
+        - {x: 85.13545, y: 17.912964}
+        - {x: 52.135452, y: 57.912964}
+        - {x: 39.135452, y: 57.912964}
+        - {x: 36.135452, y: 56.912964}
+        - {x: -83.86455, y: 22.912964}
+        - {x: -83.86455, y: -57.087036}
+        - {x: -37.864548, y: -57.087036}
+        - {x: 26.135452, y: -43.087036}
+        - {x: 85.13545, y: -4.087036}
+        - {x: 85.13545, y: 17.912964}
+        - {x: 52.135452, y: 57.912964}
+        - {x: 39.135452, y: 57.912964}
+        - {x: 36.135452, y: 56.912964}
+        - {x: -83.86455, y: 22.912964}
+        - {x: -83.86455, y: -57.087036}
+        - {x: -37.864548, y: -57.087036}
+        - {x: 26.135452, y: -43.087036}
+        - {x: 85.13545, y: -4.087036}
+        - {x: 85.13545, y: 17.912964}
+        - {x: 52.135452, y: 57.912964}
+      - - {x: 39.135452, y: 57.912964}
+        - {x: 36.135452, y: 56.912964}
+        - {x: -83.86455, y: 22.912964}
+        - {x: -83.86455, y: -57.087036}
+        - {x: -37.864548, y: -57.087036}
+        - {x: 26.135452, y: -43.087036}
+        - {x: 85.13545, y: -4.087036}
+        - {x: 85.13545, y: 17.912964}
+        - {x: 52.135452, y: 57.912964}
+        - {x: 39.135452, y: 57.912964}
+        - {x: 36.135452, y: 56.912964}
+        - {x: -83.86455, y: 22.912964}
+        - {x: -83.86455, y: -57.087036}
+        - {x: -37.864548, y: -57.087036}
+        - {x: 26.135452, y: -43.087036}
+        - {x: 85.13545, y: -4.087036}
+        - {x: 85.13545, y: 17.912964}
+        - {x: 52.135452, y: 57.912964}
+      - - {x: 39.135452, y: 57.912964}
+        - {x: 36.135452, y: 56.912964}
+        - {x: -83.86455, y: 22.912964}
+        - {x: -83.86455, y: -57.087036}
+        - {x: -37.864548, y: -57.087036}
+        - {x: 26.135452, y: -43.087036}
+        - {x: 85.13545, y: -4.087036}
+        - {x: 85.13545, y: 17.912964}
+        - {x: 52.135452, y: 57.912964}
     - name: witchassetsheet_3
       rect:
         serializedVersion: 2
@@ -122,7 +177,7 @@ TextureImporter:
         width: 413
         height: 430
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline:
       - - {x: 172.77344, y: 141.86707}
@@ -149,7 +204,7 @@ TextureImporter:
         width: 482
         height: 516
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline:
       - - {x: 71.39627, y: -91.83179}
@@ -187,7 +242,7 @@ TextureImporter:
         width: 215
         height: 385
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline:
       - - {x: 62.763855, y: 74.86908}
@@ -216,7 +271,7 @@ TextureImporter:
         width: 228
         height: 357
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline:
       - - {x: 87.85205, y: -11.198853}
@@ -244,7 +299,7 @@ TextureImporter:
         width: 222
         height: 402
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline:
       - - {x: 92.84442, y: 96.23566}
@@ -261,6 +316,21 @@ TextureImporter:
         - {x: 63.84442, y: -163.76434}
         - {x: 46.84442, y: -5.7643433}
         - {x: 92.84442, y: 43.235657}
+    - name: witchassetsheet_8
+      rect:
+        serializedVersion: 2
+        x: 424
+        y: 1341
+        width: 67
+        height: 78
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -27.588104, y: 33.422974}
+        - {x: -27.588104, y: -32.577026}
+        - {x: 28.411896, y: -32.577026}
+        - {x: 28.411896, y: 33.422974}
     outline: []
   spritePackingTag: 
   userData: 
