@@ -17,18 +17,17 @@ public class Movehands : MonoBehaviour {
 	public GameObject HighCorn;
 	public GameObject MediumCorn;
 	public GameObject LowCorn;
+	public AudioClip Heaven;
 
 
 	// Use this for initialization
 	void Start () {
-		StoryText.text = "start";
+		StoryText.text = "On Thursday, late in November, God instructed the villagers to trade their corn for bibles. ";
 		LeanTween.init (10000);
 	}
 	
 	// Update is called once per frame
 	void Update () {
-	
-		Debug.Log (canProgress);
 
 		if (Input.GetKey (KeyCode.LeftShift)) {
 			Lefthand.transform.position += new Vector3 (0.01f, 0, 0);
@@ -63,6 +62,7 @@ public class Movehands : MonoBehaviour {
 		if (RightHand.transform.position.x < 0.7 && Lefthand.transform.position.x > -0.7) {
 			Instantiate (Bible, new Vector3 (BibleStart.position.x, BibleStart.position.y, BibleStart.position.z), Quaternion.identity);
 			if (canProgress) {
+				GetComponent<AudioSource> ().PlayOneShot (Heaven);
 				storyProgress++;
 				canProgress = false;
 				NextText ();
@@ -77,24 +77,24 @@ public class Movehands : MonoBehaviour {
 		switch (storyProgress){
 
 		case 1:
-			StoryText.text = "1";
+			StoryText.text = "\"but what will we eat?\", the villagers asked. ";
 			LeftInstruction.SetActive (false);
 			RightInstruction.SetActive (false);
 			HighCorn.SetActive (false);
 			break;
 
 		case 2:
-			StoryText.text = "2";
+			StoryText.text = "\"I will provide.\", God replied.";
 			MediumCorn.SetActive (false);
 			break;
 
 		case 3:
-			StoryText.text = "3";
+			StoryText.text = "The villagers obeyed with trepidation.";
 			LowCorn.SetActive (false);
 			break;
 
 		default:
-			SceneManager.LoadScene ("");
+			SceneManager.LoadScene ("MenuScene");
 			break;
 		}
 	}
