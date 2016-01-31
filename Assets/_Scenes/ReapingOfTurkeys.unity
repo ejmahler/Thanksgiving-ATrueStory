@@ -454,7 +454,7 @@ GameObject:
   - 4: {fileID: 294423961}
   m_Layer: 0
   m_Name: Player_Start
-  m_TagString: Player
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -661,6 +661,7 @@ MonoBehaviour:
   maxSpeed: 4
   _myRigidbody: {fileID: 0}
   PlayerStart: {fileID: 294423961}
+  Yell: {fileID: 8300000, guid: c0a82e06361c6f64d9b629e3cb6863d3, type: 3}
 --- !u!50 &826512217
 Rigidbody2D:
   serializedVersion: 2
@@ -1394,7 +1395,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 80caaf794cda4e846b13f9a4edced416, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Turkey: {fileID: 186412, guid: 52bc8818216cece43b1ca20be1c9693e, type: 2}
+  Turkey: {fileID: 178680, guid: 52bc8818216cece43b1ca20be1c9693e, type: 2}
   storyText: {fileID: 324513764}
   Instructions: {fileID: 207062787}
   storyProgress: 0

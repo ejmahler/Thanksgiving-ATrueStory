@@ -6,6 +6,7 @@ public class Reaping_PlayerMove : MonoBehaviour {
 	public float maxSpeed;
 	public Rigidbody2D _myRigidbody;
 	public Transform PlayerStart;
+	public AudioClip Yell;
 
 
 	// Use this for initialization
@@ -30,6 +31,10 @@ public class Reaping_PlayerMove : MonoBehaviour {
 	public void ResetPlayer(){
 		_myRigidbody.velocity = new Vector2 (0f, 0f);
 		transform.position = PlayerStart.position;
+	}
+
+	public void PlayYell(){
+		GetComponent<AudioSource> ().PlayOneShot (Yell);
 	}
 
 
