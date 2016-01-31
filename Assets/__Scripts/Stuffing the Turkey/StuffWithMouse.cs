@@ -13,6 +13,9 @@ public class StuffWithMouse : MonoBehaviour {
 	private int StuffCount;
 	public GameObject TurkeyBody;
 	public AudioClip Stuff;
+	public GameObject Mouse;
+	public GameObject UpArrow;
+	public GameObject DownArrow;
 
 
 	// Use this for initialization
@@ -62,6 +65,9 @@ public class StuffWithMouse : MonoBehaviour {
 
 		case 1:
 			StoryText.text = "Humans overcame their turkey oppressors!";
+			Mouse.SetActive (false);
+			UpArrow.SetActive (false);
+			DownArrow.SetActive (false);
 			break;
 
 		case 2:
