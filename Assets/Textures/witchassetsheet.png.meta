@@ -1,0 +1,268 @@
+fileFormatVersion: 2
+guid: 9b2e4bde4e4ae4feba5a2e251deb76d4
+timeCreated: 1454205324
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: witchassetsheet_0
+    21300002: witchassetsheet_1
+    21300004: witchassetsheet_2
+    21300006: witchassetsheet_3
+    21300008: witchassetsheet_4
+    21300010: witchassetsheet_5
+    21300012: witchassetsheet_6
+    21300014: witchassetsheet_7
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 7
+  cubemapConvolutionExponent: 1.5
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: -1
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  rGBM: 0
+  compressionQuality: 50
+  allowsAlphaSplitting: 0
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: witchassetsheet_0
+      rect:
+        serializedVersion: 2
+        x: 154
+        y: 2042
+        width: 202
+        height: 138
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 39.135452, y: 57.912964}
+        - {x: 36.135452, y: 56.912964}
+        - {x: -83.86455, y: 22.912964}
+        - {x: -83.86455, y: -57.087036}
+        - {x: -37.864548, y: -57.087036}
+        - {x: 26.135452, y: -43.087036}
+        - {x: 85.13545, y: -4.087036}
+        - {x: 85.13545, y: 17.912964}
+        - {x: 52.135452, y: 57.912964}
+    - name: witchassetsheet_1
+      rect:
+        serializedVersion: 2
+        x: 561
+        y: 1905
+        width: 182
+        height: 412
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 76.9577, y: 84.367065}
+        - {x: 73.9577, y: 87.367065}
+        - {x: 68.9577, y: 87.367065}
+        - {x: 76.9577, y: 136.36707}
+        - {x: 76.9577, y: 156.36707}
+        - {x: 52.957703, y: 172.36707}
+        - {x: -51.042297, y: 172.36707}
+        - {x: -75.0423, y: 165.36707}
+        - {x: -75.0423, y: -152.63293}
+        - {x: -62.042297, y: -170.63293}
+        - {x: 34.957703, y: -170.63293}
+        - {x: 36.957703, y: -141.63293}
+        - {x: 73.9577, y: 60.367065}
+        - {x: 76.9577, y: 68.367065}
+    - name: witchassetsheet_2
+      rect:
+        serializedVersion: 2
+        x: 1005
+        y: 2055
+        width: 35
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: witchassetsheet_3
+      rect:
+        serializedVersion: 2
+        x: 1374
+        y: 1905
+        width: 413
+        height: 430
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 172.77344, y: 141.86707}
+        - {x: 172.77344, y: 149.86707}
+        - {x: 167.77344, y: 153.86707}
+        - {x: -34.226562, y: 179.86707}
+        - {x: -145.22656, y: 179.86707}
+        - {x: -171.22656, y: 154.86707}
+        - {x: -171.22656, y: 119.867065}
+        - {x: -159.22656, y: 98.867065}
+        - {x: -135.22656, y: 73.867065}
+        - {x: -139.22656, y: -6.1329346}
+        - {x: -136.22656, y: -174.13293}
+        - {x: -133.22656, y: -178.13293}
+        - {x: -39.226562, y: -178.13293}
+        - {x: -49.226562, y: 12.867065}
+        - {x: -23.226562, y: 106.867065}
+        - {x: 139.77344, y: 133.86707}
+    - name: witchassetsheet_4
+      rect:
+        serializedVersion: 2
+        x: 170
+        y: 1103
+        width: 482
+        height: 516
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 71.39627, y: -91.83179}
+        - {x: 200.39627, y: -44.831787}
+        - {x: 201.39627, y: -41.831787}
+        - {x: 201.39627, y: -18.831787}
+        - {x: 93.39627, y: 102.16821}
+        - {x: 60.39627, y: 150.16821}
+        - {x: 71.39627, y: 183.16821}
+        - {x: 44.39627, y: 214.16821}
+        - {x: -26.60373, y: 214.16821}
+        - {x: -68.60373, y: 179.16821}
+        - {x: -53.60373, y: 101.16821}
+        - {x: -129.60373, y: 31.168213}
+        - {x: -187.60373, y: 10.168213}
+        - {x: -161.60373, y: -28.831787}
+        - {x: -131.60373, y: -88.83179}
+        - {x: -194.60373, y: -89.83179}
+        - {x: -199.60373, y: -90.83179}
+        - {x: -199.60373, y: -132.83179}
+        - {x: -144.60373, y: -151.83179}
+        - {x: -46.60373, y: -93.83179}
+        - {x: 11.396271, y: -127.83179}
+        - {x: 4.3962708, y: -208.83179}
+        - {x: 21.39627, y: -213.83179}
+        - {x: 44.39627, y: -213.83179}
+        - {x: 46.39627, y: -205.83179}
+        - {x: 81.39627, y: -200.83179}
+        - {x: 57.39627, y: -126.83179}
+    - name: witchassetsheet_5
+      rect:
+        serializedVersion: 2
+        x: 898
+        y: 1169
+        width: 215
+        height: 385
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 62.763855, y: 74.86908}
+        - {x: 46.763855, y: 72.86908}
+        - {x: 79.763855, y: 104.86908}
+        - {x: 47.763855, y: 160.86908}
+        - {x: -29.236145, y: 160.86908}
+        - {x: -89.236145, y: 78.86908}
+        - {x: -89.236145, y: 63.86908}
+        - {x: -80.236145, y: 42.86908}
+        - {x: -66.236145, y: -94.13092}
+        - {x: -89.236145, y: -130.13092}
+        - {x: -89.236145, y: -151.13092}
+        - {x: -45.236145, y: -159.13092}
+        - {x: 22.763855, y: -159.13092}
+        - {x: 89.763855, y: -130.13092}
+        - {x: 89.763855, y: -79.13092}
+        - {x: 71.763855, y: 34.86908}
+        - {x: 83.763855, y: 72.86908}
+        - {x: 76.763855, y: 74.86908}
+    - name: witchassetsheet_6
+      rect:
+        serializedVersion: 2
+        x: 1467
+        y: 1184
+        width: 228
+        height: 357
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 87.85205, y: -11.198853}
+        - {x: 93.85205, y: 68.80115}
+        - {x: 77.85205, y: 119.80115}
+        - {x: 41.85205, y: 148.80115}
+        - {x: -5.147949, y: 148.80115}
+        - {x: -53.14795, y: 117.80115}
+        - {x: -72.14795, y: 60.801147}
+        - {x: -80.14795, y: -35.198853}
+        - {x: -94.14795, y: -89.19885}
+        - {x: -94.14795, y: -115.19885}
+        - {x: -82.14795, y: -125.19885}
+        - {x: -41.14795, y: -144.19885}
+        - {x: 13.852051, y: -148.19885}
+        - {x: 66.85205, y: -148.19885}
+        - {x: 89.85205, y: -137.19885}
+        - {x: 95.85205, y: -129.19885}
+        - {x: 95.85205, y: -65.19885}
+    - name: witchassetsheet_7
+      rect:
+        serializedVersion: 2
+        x: 255
+        y: 279
+        width: 222
+        height: 402
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 92.84442, y: 96.23566}
+        - {x: 43.84442, y: 167.23566}
+        - {x: 20.844421, y: 167.23566}
+        - {x: -12.155579, y: 146.23566}
+        - {x: -89.15558, y: 83.23566}
+        - {x: -85.15558, y: 72.23566}
+        - {x: -75.15558, y: -5.7643433}
+        - {x: -92.15558, y: -131.76434}
+        - {x: -92.15558, y: -165.76434}
+        - {x: -73.15558, y: -166.76434}
+        - {x: 61.84442, y: -166.76434}
+        - {x: 63.84442, y: -163.76434}
+        - {x: 46.84442, y: -5.7643433}
+        - {x: 92.84442, y: 43.235657}
+    outline: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
