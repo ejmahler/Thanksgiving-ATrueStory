@@ -24,15 +24,46 @@ public class Reaping_Restart : MonoBehaviour {
 
 
 
+	//
+	string message;
+	public float letterPause = 0.02f;
+	//
+
 
 	// Use this for initialization
 	void Start () {
+		///
+		message = "Humans and Turkeys were locked in an endless struggle.";
+		//message = storyText.GetComponent<Text>().text;
+		storyText.GetComponent<Text>().text = "";
+		StartCoroutine(TypeText ());
+
+		//
+
+
+
+
 		timer = 0.3f;
 		canStart = false;
-		storyText.text = "Humans and Turkeys were locked in an endless struggle.";
+		//storyText.text = "Humans and Turkeys were locked in an endless struggle.";
 		PlayerSprite.GetComponent<SpriteRenderer> ().sprite = Member1;
 		reaping_Start = false;
 	}
+
+	IEnumerator TypeText () {
+		foreach (char letter in message.ToCharArray()) {
+			storyText.GetComponent<Text>().text += letter;
+			//if (sound)
+			//	audio.PlayOneShot (sound);
+			yield return new WaitForSeconds (letterPause);
+		}      
+	}
+
+
+
+
+
+
 	
 	// Update is called once per frame
 	void Update () {
@@ -81,23 +112,34 @@ public class Reaping_Restart : MonoBehaviour {
 		ChangeSprites ();
 
 	}
-
+		
 	public void ChangeSprites(){
 		switch (storyProgress) {
 		case 1:
-			storyText.text = "Turkeys would decent upon hopeless villagers, dragging them away in the night.";
+			message = "Turkeys would decent upon hopeless villagers, dragging them away in the night.";
+			storyText.GetComponent<Text>().text = "";
+			StartCoroutine(TypeText ());
+
+
+			//storyText.text = "Turkeys would decent upon hopeless villagers, dragging them away in the night.";
 			PlayerSprite.GetComponent<SpriteRenderer> ().sprite = Member2;
 			Family1.SetActive (false);
 			break;
 
 		case 2:
-			storyText.text = "Entire families disappeared and were never heard from again.";
+			message = "Entire families disappeared and were never heard from again.";
+			storyText.GetComponent<Text>().text = "";
+			StartCoroutine(TypeText ());
+			//storyText.text = "Entire families disappeared and were never heard from again.";
 			PlayerSprite.GetComponent<SpriteRenderer> ().sprite = Member3;
 			Family2.SetActive (false);
 			break;
 
 		case 3:
-			storyText.text = "The outlook for humanity was bleak at best...";
+			message = "The outlook for humanity was bleak at best...";
+			storyText.GetComponent<Text>().text = "";
+			StartCoroutine(TypeText ());
+			//storyText.text = "The outlook for humanity was bleak at best...";
 			PlayerSprite.GetComponent<SpriteRenderer> ().sprite = Member4;
 			Family3.SetActive (false);
 			break;
@@ -108,3 +150,10 @@ public class Reaping_Restart : MonoBehaviour {
 		}
 	}
 }
+
+
+
+
+
+
+
