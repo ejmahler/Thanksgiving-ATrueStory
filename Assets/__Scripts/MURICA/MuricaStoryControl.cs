@@ -17,6 +17,9 @@ public class MuricaStoryControl : MonoBehaviour {
 	[SerializeField]
 	private Text instructionMesh;
 
+	[SerializeField]
+	private GameObject dragSourcePrefab;
+
 	private int turkeyDrops = 0;
 
 	// Use this for initialization
@@ -32,7 +35,6 @@ public class MuricaStoryControl : MonoBehaviour {
 			while (turkeyDrops == 0) {
 				yield return null;
 			}
-			GetComponent<AudioSource> ().Play ();
 			turkeyDrops--;
 		}
 
@@ -44,6 +46,12 @@ public class MuricaStoryControl : MonoBehaviour {
 	public void DropTurkey()
 	{
 		turkeyDrops++;
+
+		var newSource = Instantiate<GameObject> (dragSourcePrefab);
+		newSource.transform.position = new Vector3 (-10, -3.6f, -1);
+		LeanTween.moveX (newSource, -3.5f, 2f);
+
+		newSource.GetComponent<DragAndDropSource> ().target = gameObject;
 	}
 
 }

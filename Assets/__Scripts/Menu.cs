@@ -8,7 +8,7 @@ public class Menu : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-	
+		LeanTween.init (5000);
 	}
 	
 	// Update is called once per frame

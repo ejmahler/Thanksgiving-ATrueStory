@@ -26,8 +26,7 @@ public class StuffWithMouse : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-	
-		Debug.Log (StuffCount);
+
 		mousePosition = Input.mousePosition;
 		mousePosition = Camera.main.ScreenToWorldPoint (mousePosition);
 		transform.position = new Vector3 (transform.position.x, mousePosition.y, transform.position.z);
