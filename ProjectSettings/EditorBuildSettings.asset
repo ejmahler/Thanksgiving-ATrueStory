@@ -15,3 +15,7 @@ EditorBuildSettings:
     path: Assets/_Scenes/ReapingOfTurkeys.unity
   - enabled: 1
     path: Assets/_Scenes/StuffTheTurkey.unity
+  - enabled: 1
+    path: Assets/_Scenes/SacrificingTurkey.unity
+  - enabled: 1
+    path: Assets/_Scenes/ThrowCandy.unity
