@@ -3,7 +3,7 @@ using System.Collections;
 
 public class Reaping_TurkeyChase : MonoBehaviour {
 
-	public Transform Target;
+	public GameObject Target;
 	private float speed;
 	public GameObject ReapingMaster;
 	public Transform StartPosition;
@@ -13,6 +13,17 @@ public class Reaping_TurkeyChase : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
+		ReapingMaster = GameObject.FindGameObjectWithTag ("MainCamera");
+		StartPosition = GameObject.FindGameObjectWithTag ("Start1").transform;
+		StartPosition2 = GameObject.FindGameObjectWithTag ("Start2").transform;
+		Target = GameObject.FindGameObjectWithTag ("Player");
+			int startSpot = Random.Range (0, 2);
+			if (startSpot == 0) {
+			transform.position = StartPosition.position;
+			} else if (startSpot == 1) {
+				transform.position = StartPosition2.position;
+			}
+
 		speed = 2f;
 	}
 	
@@ -21,20 +32,20 @@ public class Reaping_TurkeyChase : MonoBehaviour {
 	
 
 
-		if (Reaping_Restart.reaping_Start) {
+		//if (Reaping_Restart.reaping_Start) {
 			speed += 0.005f;
 			float step = speed * Time.deltaTime;
-			transform.position = Vector3.MoveTowards (transform.position, Target.position, step);
-		}
+			transform.position = Vector3.MoveTowards (transform.position, Target.transform.position, step);
+		//}
 
-		if (transform.position.x < Target.position.x) {
+		if (transform.position.x < Target.transform.position.x) {
 			if (facingLeft) {
 				facingLeft = false;
 				Flip ();
 			}
 		}
 
-		if (transform.position.x > Target.position.x) {
+		if (transform.position.x > Target.transform.position.x) {
 			if (!facingLeft) {
 				facingLeft = true;
 				Flip ();
@@ -48,13 +59,9 @@ public class Reaping_TurkeyChase : MonoBehaviour {
 			GetComponent<AudioSource> ().PlayOneShot (Person);
 			ReapingMaster.GetComponent<Reaping_Restart> ().Reset ();
 			other.gameObject.GetComponent<Reaping_PlayerMove> ().ResetPlayer ();
-			speed = 2f;
-			int startSpot = Random.Range (0, 2);
-			if (startSpot == 0) {
-				transform.position = StartPosition.position;
-			} else if (startSpot == 1) {
-				transform.position = StartPosition2.position;
-			}
+			Destroy (this.gameObject);
+			//speed = 2f;
+
 		}
 	}
 

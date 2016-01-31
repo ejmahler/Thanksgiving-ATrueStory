@@ -21,6 +21,7 @@ public class Reaping_Restart : MonoBehaviour {
 	public GameObject Family2;
 	public GameObject Family3;
 	public AudioClip TurkeyGobble;
+	public Transform TurkeyStart;
 
 
 
@@ -80,21 +81,25 @@ public class Reaping_Restart : MonoBehaviour {
 			if (Input.GetKeyDown (KeyCode.W)) {
 				reaping_Start = true;
 				canStart = false;
+				Instantiate (Turkey, new Vector3 (TurkeyStart.position.x, TurkeyStart.position.y, TurkeyStart.position.z), Quaternion.identity);
 				GetComponent<AudioSource> ().PlayOneShot (TurkeyGobble);
 				Instructions.SetActive (false);
 			} else if (Input.GetKeyDown (KeyCode.S)) {
 				reaping_Start = true;
 				canStart = false;
+				Instantiate (Turkey, new Vector3 (TurkeyStart.position.x, TurkeyStart.position.y, TurkeyStart.position.z), Quaternion.identity);
 				GetComponent<AudioSource> ().PlayOneShot (TurkeyGobble);
 				Instructions.SetActive (false);
 			} else if (Input.GetKeyDown (KeyCode.D)) {
 				reaping_Start = true;
 				canStart = false;
+				Instantiate (Turkey, new Vector3 (TurkeyStart.position.x, TurkeyStart.position.y, TurkeyStart.position.z), Quaternion.identity);
 				GetComponent<AudioSource> ().PlayOneShot (TurkeyGobble);
 				Instructions.SetActive (false);
 			} else if (Input.GetKeyDown (KeyCode.A)) {
 				reaping_Start = true;
 				canStart = false;
+				Instantiate (Turkey, new Vector3 (TurkeyStart.position.x, TurkeyStart.position.y, TurkeyStart.position.z), Quaternion.identity);
 				GetComponent<AudioSource> ().PlayOneShot (TurkeyGobble);
 				Instructions.SetActive (false);
 			}
