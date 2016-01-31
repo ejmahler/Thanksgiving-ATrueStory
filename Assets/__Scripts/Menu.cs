@@ -1,7 +1,10 @@
 ﻿using UnityEngine;
 using System.Collections;
+using UnityEngine.SceneManagement;
 
 public class Menu : MonoBehaviour {
+
+	public AudioClip Select;
 
 	// Use this for initialization
 	void Start () {
@@ -14,26 +17,34 @@ public class Menu : MonoBehaviour {
 	}
 
 	public void England(){
-		Application.LoadLevel ("AMURICA");
+		GetComponent<AudioSource> ().PlayOneShot (Select);
+		SceneManager.LoadScene ("AMURICA");
+
 	}
 
 	public void Reaper(){
-		Application.LoadLevel ("ReapingOfTurkeys");
+		GetComponent<AudioSource> ().PlayOneShot (Select);
+		SceneManager.LoadScene ("ReapingOfTurkeys");
+
 	}
 
 	public void Witches(){
-		Application.LoadLevel ("SacrificingTurkey");
+		GetComponent<AudioSource> ().PlayOneShot (Select);
+		SceneManager.LoadScene ("SacrificingTurkey");
 	}
 
 	public void Famine(){
-		Application.LoadLevel ("");
+		GetComponent<AudioSource> ().PlayOneShot (Select);
+		SceneManager.LoadScene ("FamineHands");
 	}
 
 	public void Prophecy(){
-		Application.LoadLevel ("");
+		GetComponent<AudioSource> ().PlayOneShot (Select);
+		SceneManager.LoadScene ("TheProphecy");
 	}
 
 	public void Credits(){
-
+		GetComponent<AudioSource> ().PlayOneShot (Select);
+		SceneManager.LoadScene ("Credits");
 	}
 }

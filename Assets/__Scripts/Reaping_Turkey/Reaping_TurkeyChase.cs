@@ -19,9 +19,10 @@ public class Reaping_TurkeyChase : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 	
-		speed += 0.005f;
+
 
 		if (Reaping_Restart.reaping_Start) {
+			speed += 0.005f;
 			float step = speed * Time.deltaTime;
 			transform.position = Vector3.MoveTowards (transform.position, Target.position, step);
 		}

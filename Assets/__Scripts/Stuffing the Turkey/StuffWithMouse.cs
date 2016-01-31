@@ -1,6 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class StuffWithMouse : MonoBehaviour {
 
@@ -79,7 +80,7 @@ public class StuffWithMouse : MonoBehaviour {
 			break;
 
 		default:
-			Application.LoadLevel ("MenuScene");
+			SceneManager.LoadScene ("MenuScene");
 			break;
 		}
 

@@ -1,6 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class Reaping_Restart : MonoBehaviour {
 
@@ -102,7 +103,7 @@ public class Reaping_Restart : MonoBehaviour {
 			break;
 
 		default:
-			Application.LoadLevel ("StuffTheTurkey");
+			SceneManager.LoadScene ("StuffTheTurkey");
 			break;
 		}
 	}

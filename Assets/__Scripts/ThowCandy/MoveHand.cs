@@ -1,6 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class MoveHand : MonoBehaviour {
 
@@ -19,7 +20,7 @@ public class MoveHand : MonoBehaviour {
 	void Start () {
 		_myRigidbody = GetComponent<Rigidbody2D> ();
 		StoryText.text = "After a century of  heartbreak, the townspeople realized that candy was the answer!";
-		LeanTween.init (5000);
+		LeanTween.init (10000);
 	}
 
 
@@ -62,7 +63,7 @@ public class MoveHand : MonoBehaviour {
 			break;
 
 		default:
-			Application.LoadLevel ("MenuScene");
+			SceneManager.LoadScene ("MenuScene");
 			break;
 		}
 	}
