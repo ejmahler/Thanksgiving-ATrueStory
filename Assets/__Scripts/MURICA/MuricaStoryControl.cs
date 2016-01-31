@@ -12,7 +12,7 @@ public class MuricaStoryControl : MonoBehaviour {
 	};
 
 	[SerializeField]
-	private Text storyMesh;
+	private TextFlasher storyMesh;
 
 	[SerializeField]
 	private Text instructionMesh;
@@ -28,7 +28,7 @@ public class MuricaStoryControl : MonoBehaviour {
 		instructionMesh.text = "Drag boxes of turkey and drop them into the water.";
 
 		foreach (string storyItem in turkeyPartyStory) {
-			storyMesh.text = storyItem;
+			storyMesh.SetText(storyItem);
 
 			yield return new WaitForSeconds (1f);
 
@@ -53,5 +53,7 @@ public class MuricaStoryControl : MonoBehaviour {
 
 		newSource.GetComponent<DragAndDropSource> ().target = gameObject;
 	}
-
 }
+
+
+

@@ -267,7 +267,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: eb60ced051fee470c8030131b9b4dbb9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  storyMesh: {fileID: 1609078870}
+  storyMesh: {fileID: 1609078872}
   instructionMesh: {fileID: 924104449}
   dragSourcePrefab: {fileID: 178418, guid: 4bf96369ea7564983bd5afac88febd1d, type: 2}
 --- !u!60 &722705042
@@ -721,6 +721,7 @@ GameObject:
   - 224: {fileID: 1609078869}
   - 222: {fileID: 1609078871}
   - 114: {fileID: 1609078870}
+  - 114: {fileID: 1609078872}
   m_Layer: 5
   m_Name: storyText
   m_TagString: Untagged
@@ -784,3 +785,14 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1609078868}
+--- !u!114 &1609078872
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1609078868}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bf08ee0e653bf42c1926db8ddeb5eaff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

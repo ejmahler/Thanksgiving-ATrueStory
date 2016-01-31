@@ -15,7 +15,7 @@ public class WalkToTarget : MonoBehaviour {
 	void Update () {
 		if (Input.GetAxisRaw("Vertical") > 0) {
 
-			float speed = GetDistance() / 12 + .04f;
+			float speed = GetDistance() / 12 + .08f;
 
 			Vector3 direction = (target.position - transform.position).normalized;
 			transform.position += direction * speed * Time.deltaTime;
