@@ -8,7 +8,7 @@ public class TextFlasher : MonoBehaviour {
 	private Text textBox;
 
 	// Use this for initialization
-	void Start () {
+	void Awake () {
 		blackBackground = GetComponentInParent<Image> ().GetComponent<RectTransform> ();
 		textBox = GetComponent<Text> ();
 	}
