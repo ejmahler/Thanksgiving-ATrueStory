@@ -9,6 +9,7 @@ public class Reaping_TurkeyChase : MonoBehaviour {
 	public Transform StartPosition;
 	public Transform StartPosition2;
 	private bool facingLeft = true;
+	public AudioClip Person;
 
 	// Use this for initialization
 	void Start () {
@@ -43,6 +44,7 @@ public class Reaping_TurkeyChase : MonoBehaviour {
 	void OnTriggerEnter2D(Collider2D other){
 
 		if (other.gameObject.tag == "Player") {
+			GetComponent<AudioSource> ().PlayOneShot (Person);
 			ReapingMaster.GetComponent<Reaping_Restart> ().Reset ();
 			other.gameObject.GetComponent<Reaping_PlayerMove> ().ResetPlayer ();
 			speed = 2f;

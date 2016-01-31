@@ -19,6 +19,7 @@ public class Reaping_Restart : MonoBehaviour {
 	public GameObject Family1;
 	public GameObject Family2;
 	public GameObject Family3;
+	public AudioClip TurkeyGobble;
 
 
 
@@ -35,23 +36,34 @@ public class Reaping_Restart : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 	
-		timer -= Time.deltaTime;
-		if (timer < 0) {
-			canStart = true;
+		if (!reaping_Start) {
+			timer -= Time.deltaTime;
+			if (timer < 0) {
+				canStart = true;
+			}
 		}
 
 		if (canStart) {
+			
 			if (Input.GetKeyDown (KeyCode.W)) {
 				reaping_Start = true;
+				canStart = false;
+				GetComponent<AudioSource> ().PlayOneShot (TurkeyGobble);
 				Instructions.SetActive (false);
 			} else if (Input.GetKeyDown (KeyCode.S)) {
 				reaping_Start = true;
+				canStart = false;
+				GetComponent<AudioSource> ().PlayOneShot (TurkeyGobble);
 				Instructions.SetActive (false);
 			} else if (Input.GetKeyDown (KeyCode.D)) {
 				reaping_Start = true;
+				canStart = false;
+				GetComponent<AudioSource> ().PlayOneShot (TurkeyGobble);
 				Instructions.SetActive (false);
 			} else if (Input.GetKeyDown (KeyCode.A)) {
 				reaping_Start = true;
+				canStart = false;
+				GetComponent<AudioSource> ().PlayOneShot (TurkeyGobble);
 				Instructions.SetActive (false);
 			}
 		}
