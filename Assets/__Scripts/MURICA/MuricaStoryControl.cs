@@ -1,5 +1,6 @@
 ﻿using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 using System.Collections;
 
 public class MuricaStoryControl : MonoBehaviour {
@@ -11,15 +12,9 @@ public class MuricaStoryControl : MonoBehaviour {
 	};
 
 	[SerializeField]
-	private GameObject turkeyBoxPrefab;
-
-	[SerializeField]
 	private Text storyMesh;
 
-	[SerializeField]
-	private Vector3 turkeySpawnLocation;
-
-	public bool HasBeenDropped { get; set; }
+	private int turkeyDrops = 0;
 
 	// Use this for initialization
 	IEnumerator Start () {
@@ -28,18 +23,21 @@ public class MuricaStoryControl : MonoBehaviour {
 
 			yield return new WaitForSeconds (1f);
 
-			Instantiate (turkeyBoxPrefab);
-
-			while (!HasBeenDropped) {
+			while (turkeyDrops == 0) {
 				yield return null;
 			}
+			GetComponent<AudioSource> ().Play ();
+			turkeyDrops--;
 		}
 
 		//story is over
+		var result = SceneManager.LoadSceneAsync("MIDDLE_FINGER_TO_QUEEN_GO_MURICA", LoadSceneMode.Single);
+		result.allowSceneActivation = true;
 	}
 	
-	// Update is called once per frame
-	void Update () {
-	
+	public void DropTurkey()
+	{
+		turkeyDrops++;
 	}
+
 }
