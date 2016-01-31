@@ -12,11 +12,12 @@ public class StuffWithMouse : MonoBehaviour {
 	private bool addCount;
 	private int StuffCount;
 	public GameObject TurkeyBody;
+	public AudioClip Stuff;
 
 
 	// Use this for initialization
 	void Start () {
-		StoryText.text = "But throughthe power of the human spirit, people began to fight back!";
+		StoryText.text = "But through the power of the human spirit, people began to fight back!";
 	}
 	
 	// Update is called once per frame
@@ -29,6 +30,7 @@ public class StuffWithMouse : MonoBehaviour {
 		if (transform.position.y > 0) {
 			transform.position = new Vector3 (transform.position.x, 0, transform.position.z);
 			if (addCount) {
+				GetComponent<AudioSource> ().PlayOneShot (Stuff);
 				addCount = false;
 				TurkeyIncrease ();
 				StuffCount++;
@@ -63,16 +65,22 @@ public class StuffWithMouse : MonoBehaviour {
 			break;
 
 		case 2:
-			StoryText.text = "They showed them who the real dominate race is!";
+			StoryText.text = "We eat them to remind them of their defeat!";
 			break;
 
 		case 3:
-			StoryText.text = "They did it for all of humanity!";
+			StoryText.text = "We eat them for humanity!";
+			break;
+
+		default:
+			Application.LoadLevel ("MenuScene");
 			break;
 		}
+
+
 	}
 
 	void TurkeyIncrease(){
-
+		TurkeyBody.GetComponent<TurkeyGrow> ().TurkeyScale ();
 	}
 }

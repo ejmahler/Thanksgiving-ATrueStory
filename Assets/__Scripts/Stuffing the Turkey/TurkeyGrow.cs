@@ -14,6 +14,6 @@ public class TurkeyGrow : MonoBehaviour {
 	}
 
 	public void TurkeyScale(){
-		transform.localScale += new Vector3 (1.1f, 1.1f, 1f);
+		transform.localScale += new Vector3 (0.03f, 0.03f, 0f);
 	}
 }
