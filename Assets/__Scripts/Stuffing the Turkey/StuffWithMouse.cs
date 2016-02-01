@@ -9,7 +9,7 @@ public class StuffWithMouse : MonoBehaviour {
 
 	private int storyProgress;
 	private bool storyContinue = false;
-	public Text StoryText;
+	public TextFlasher StoryText;
 	private bool addCount;
 	private int StuffCount;
 	public GameObject TurkeyBody;
@@ -21,7 +21,7 @@ public class StuffWithMouse : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-		StoryText.text = "But through the power of the human spirit, people began to fight back!";
+		StoryText.SetText("But through the power of the human spirit, people began to fight back!");
 	}
 	
 	// Update is called once per frame
@@ -64,18 +64,18 @@ public class StuffWithMouse : MonoBehaviour {
 		switch (storyProgress){
 
 		case 1:
-			StoryText.text = "Humans overcame their turkey oppressors!";
+            StoryText.SetText("Humans overcame their turkey oppressors!");
 			Mouse.SetActive (false);
 			UpArrow.SetActive (false);
 			DownArrow.SetActive (false);
 			break;
 
 		case 2:
-			StoryText.text = "We eat them to remind them of their defeat!";
+            StoryText.SetText("We eat them to remind them of their defeat!");
 			break;
 
 		case 3:
-			StoryText.text = "We eat them for humanity!";
+            StoryText.SetText("We eat them for humanity!");
 			break;
 
 		default:

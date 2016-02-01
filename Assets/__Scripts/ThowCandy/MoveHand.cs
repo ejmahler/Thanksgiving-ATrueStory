@@ -11,7 +11,7 @@ public class MoveHand : MonoBehaviour {
 	public GameObject Candy;
 	public Transform CandyStart;
 	public int storyProgress;
-	public Text StoryText;
+	public TextFlasher StoryText;
 	private int candyThrown;
 	public AudioClip Cheer;
 

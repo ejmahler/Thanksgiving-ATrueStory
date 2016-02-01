@@ -19,7 +19,7 @@ public class ProphecyStory : MonoBehaviour {
 	private CanvasGroup group;
 
 	[SerializeField]
-	private Text storyText;
+	private TextFlasher storyText;
 
 
 	// Use this for initialization

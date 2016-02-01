@@ -153,6 +153,7 @@ GameObject:
   - 224: {fileID: 351206190}
   - 222: {fileID: 351206192}
   - 114: {fileID: 351206191}
+  - 114: {fileID: 351206193}
   m_Layer: 5
   m_Name: StoryText
   m_TagString: Untagged
@@ -216,6 +217,17 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 351206189}
+--- !u!114 &351206193
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 351206189}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bf08ee0e653bf42c1926db8ddeb5eaff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &527977962
 GameObject:
   m_ObjectHideFlags: 0
@@ -437,7 +449,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   mousePosition: {x: 0, y: 0, z: 0}
-  StoryText: {fileID: 351206191}
+  StoryText: {fileID: 351206193}
   TurkeyBody: {fileID: 1251622168}
   Stuff: {fileID: 8300000, guid: 08e54579fb8ba12479658436f5fd8866, type: 3}
   Mouse: {fileID: 1980546246}

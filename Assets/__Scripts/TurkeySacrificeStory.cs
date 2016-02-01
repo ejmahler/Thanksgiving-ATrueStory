@@ -25,7 +25,7 @@ public class TurkeySacrificeStory : MonoBehaviour {
 	private float maxKnifeX;
 
 	[SerializeField]
-	private Text storyText;
+	private TextFlasher storyText;
 	[SerializeField]
 	private Text instructionText;
 

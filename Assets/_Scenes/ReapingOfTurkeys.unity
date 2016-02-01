@@ -481,6 +481,7 @@ GameObject:
   - 224: {fileID: 324513763}
   - 222: {fileID: 324513765}
   - 114: {fileID: 324513764}
+  - 114: {fileID: 324513766}
   m_Layer: 5
   m_Name: StoryText
   m_TagString: Untagged
@@ -544,6 +545,17 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 324513762}
+--- !u!114 &324513766
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 324513762}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bf08ee0e653bf42c1926db8ddeb5eaff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &462227462
 GameObject:
   m_ObjectHideFlags: 0
@@ -1396,7 +1408,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Turkey: {fileID: 178680, guid: 52bc8818216cece43b1ca20be1c9693e, type: 2}
-  storyText: {fileID: 324513764}
+  storyText: {fileID: 324513766}
   Instructions: {fileID: 207062787}
   storyProgress: 0
   PlayerSprite: {fileID: 826512212}

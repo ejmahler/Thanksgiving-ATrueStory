@@ -13,7 +13,7 @@ public class QueenStoryControl : MonoBehaviour {
 	[SerializeField]
 	private Text instructionContainer;
 	[SerializeField]
-	private Text storyMesh;
+	private TextFlasher storyMesh;
 
 	[SerializeField]
 	private SpriteRenderer fistSprite;
@@ -69,6 +69,6 @@ public class QueenStoryControl : MonoBehaviour {
 		if (storyIndex >= turkeyPartyStory.Length - 1 && Input.GetKeyDown(KeyCode.Escape)) {
 			SceneManager.LoadSceneAsync("MenuScene");
 		}
-		storyMesh.text = turkeyPartyStory [storyIndex];
+		storyMesh.SetText(turkeyPartyStory [storyIndex]);
 	}
 }

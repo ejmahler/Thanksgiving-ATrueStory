@@ -95,6 +95,7 @@ GameObject:
   - 224: {fileID: 29959480}
   - 222: {fileID: 29959482}
   - 114: {fileID: 29959481}
+  - 114: {fileID: 29959483}
   m_Layer: 5
   m_Name: storyText
   m_TagString: Untagged
@@ -158,6 +159,17 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 29959479}
+--- !u!114 &29959483
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 29959479}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bf08ee0e653bf42c1926db8ddeb5eaff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &387641936
 GameObject:
   m_ObjectHideFlags: 0
@@ -590,7 +602,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   instructionContainer: {fileID: 781464815}
-  storyMesh: {fileID: 29959481}
+  storyMesh: {fileID: 29959483}
   fistSprite: {fileID: 557023738}
   fingerSprite: {fileID: 21300004, guid: d4d16847bd50540c18963402cdf78004, type: 3}
 --- !u!82 &1138794421

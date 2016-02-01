@@ -6,7 +6,6 @@ public class TextFlasher : MonoBehaviour {
 
 	private RectTransform blackBackground;
 	private Text textBox;
-	string message;
 	private float letterPause = 0.001f;
 
 	// Use this for initialization
@@ -15,18 +14,26 @@ public class TextFlasher : MonoBehaviour {
 		textBox = GetComponent<Text> ();
 	}
 
-	IEnumerator TypeText () {
+	IEnumerator TypeText (string message) {
+        int i = 0;
 		foreach (char letter in message.ToCharArray()) {
+            i++;
 			textBox.GetComponent<Text>().text += letter;
-			yield return new WaitForSeconds (letterPause);
+            if(i%8 == 0)
+			    yield return new WaitForSeconds (letterPause);
 		}      
 	}
+
+    public string text {
+        set
+        {
+            SetText(value);
+        }
+    }
 	
 	public void SetText(string text) {
-		textBox.text = text;
-		message = "Humans and Turkeys were locked in an endless struggle.";
 		textBox.GetComponent<Text>().text = "";
-		StartCoroutine(TypeText ());
+		StartCoroutine(TypeText (text));
 
 
 		LeanTween.color (blackBackground, Color.gray, .2f).setLoopPingPong (1);
