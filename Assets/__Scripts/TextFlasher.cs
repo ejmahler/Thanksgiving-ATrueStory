@@ -6,6 +6,7 @@ public class TextFlasher : MonoBehaviour {
 
 	private RectTransform blackBackground;
 	private Text textBox;
+    private string targetText;
 	private float letterPause = 0.001f;
 
 	// Use this for initialization
@@ -32,10 +33,14 @@ public class TextFlasher : MonoBehaviour {
     }
 	
 	public void SetText(string text) {
-		textBox.GetComponent<Text>().text = "";
-		StartCoroutine(TypeText (text));
+        if (targetText != text)
+        {
+            targetText = text;
+            textBox.GetComponent<Text>().text = "";
+            StartCoroutine(TypeText(text));
 
 
-		LeanTween.color (blackBackground, Color.gray, .2f).setLoopPingPong (1);
+            LeanTween.color(blackBackground, Color.gray, .2f).setLoopPingPong(1);
+        }
 	}
 }
